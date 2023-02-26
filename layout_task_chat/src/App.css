@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.App {
+  display: flex;
+  text-align: center;
+  background-image: url(./image.png);
+  align-items: center;
+  flex-direction: column;
+  max-width: 651px;
+  max-height: 757px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.message_input{
+  display: flex;
+  height: 20vw;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+.textarea{
+  background: #FFFFFF;
+  border: 1px solid #DBDBDB;
+  border-radius: 4px;
+  width: 40vw;
+  height: 10vw;
+}
+.bottom{
+  background: #0F54B9;
+  box-shadow: 0px 4px 6px rgba(15, 84, 185, 0.3);
+  border-radius: 21px;
+  color: #FFFFFF;
+
+}
+.bottom p {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 10px 20px;
+  margin: 0;
+}
