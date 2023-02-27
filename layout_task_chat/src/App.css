@@ -11,13 +11,13 @@ body {
   flex-direction: column;
   max-width: 651px;
   max-height: 757px;
+  margin: 20px;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
 
 .App-header {
   display: flex;
@@ -27,6 +27,7 @@ body {
  
 }
 .message_input{
+  max-width: 651px;
   display: flex;
   height: 20vw;
   flex-direction: column;
@@ -37,19 +38,80 @@ body {
   background: #FFFFFF;
   border: 1px solid #DBDBDB;
   border-radius: 4px;
-  width: 40vw;
+  max-width: 590px;
+  width: 90vw;
   height: 10vw;
+  max-height: 130px;
 }
 .bottom{
   background: #0F54B9;
   box-shadow: 0px 4px 6px rgba(15, 84, 185, 0.3);
   border-radius: 21px;
   color: #FFFFFF;
-
 }
 .bottom p {
   font-size: 16px;
   line-height: 24px;
   padding: 10px 20px;
   margin: 0;
+}
+.messages_scroll {
+  max-height: 500px;
+  overflow: auto;
+  border-bottom: 1px solid #DBDBDB;
+}
+.left-mes{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px;
+}
+.right-mes{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px;
+}
+.left-mes p {
+  background: #F1F3F5;
+  border-radius: 5px;
+  padding: 15px;
+  max-width: 440px;
+  margin-left: 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.right-mes p {
+  background: #F1F3F5;
+  border-radius: 5px;
+  padding: 15px;
+  margin-right: 15px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.line {
+  display: flex;
+}
+.line div {
+  flex: 1 0;
+  margin-top: 1.7em;
+  border-top: 1px solid #DBDBDB;
+}
+.line div:first-child {
+  margin-right: 1.7em;
+}
+.line div:last-child {
+  margin-left: 1.7em;
+}
+.new-mes p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
 }
